@@ -6,3 +6,7 @@ library(tidyverse)
 df <- mtcars
 
 print(df)
+
+# filter high performance cars
+high_performance_cars <- df %>% 
+  filter(hp > 200)
